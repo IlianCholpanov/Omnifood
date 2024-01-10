@@ -5,10 +5,10 @@
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
 
 - Font weights
+Default: 400
 
 - Line heights
 Default: 1
-
 
 --- 02 COLORS 
 
@@ -31,6 +31,14 @@ Default: 1
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  /* font-size: 10px; */
+  /* 1 rem = 16px by setting the html font-size to 10 px we make the 1 rem = 10px */
+  /* 10 / 16 = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
 }
 
 body {
