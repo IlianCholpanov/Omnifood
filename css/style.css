@@ -49,6 +49,25 @@ body {
   color: #555;
 }
 
+/*************************/
+/* GENERAL COMPONENTS */
+/*************************/
+.heading-primary {
+  font-size: 5.2rem;
+  font-weight: 700;
+  line-height: 1.05;
+  color: #333;
+  letter-spacing: -0.5px;
+  margin-bottom: 3.2rem;
+}
+/*************************/
+/* HEADER */
+/*************************/
+
+/*************************/
+/* HERO SECTION */
+/*************************/
+
 .section-hero {
   background-color: #fdf2e9;
   padding: 9.6rem 0;
@@ -63,14 +82,7 @@ body {
   align-items: center;
 }
 
-.heading-primary {
-  font-size: 5.2rem;
-  font-weight: 700;
-  line-height: 1.05;
-  color: #333;
-  letter-spacing: -0.5px;
-  margin-bottom: 3.2rem;
-}
+
 
 .hero-description {
   font-size: 2rem;
