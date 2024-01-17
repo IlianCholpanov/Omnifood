@@ -385,4 +385,10 @@
 .plan-text {
   font-size: 1.6rem;
   line-height: 1.6;
+  color: #777;
+}
+
+.plan-sign-up {
+  text-align: center;
+  margin-top: 4.8rem;
 }
