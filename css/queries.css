@@ -58,6 +58,35 @@ Instead, 1rem = 1em = 16px */
   }
 }
 
+/*************************/
+/* BELOW 944px  (tablets) */
+/*************************/
+
+@media (max-width: 59em) {
+  html {
+    /* 8px / 16px = 0.5 */
+    font-size: 50%;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 0 8rem;
+  }
+
+  .hero-text-box,
+  .hero-img-box {
+    text-align: center;
+  }
+
+  .hero-img {
+    width: 60%;
+  }
+
+  .delivered-meals {
+    justify-content: center;
+  }
+}
+
 /* 
 - Font sizes (px)
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 
