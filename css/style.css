@@ -1,13 +1,14 @@
-/*************************/
+/**************************/
 /* HEADER */
-/*************************/
+/**************************/
+
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #fdf2e9;
 
-  /* Fixed height because the header should be sticky */
+  /* Because we want header to be sticky later */
   height: 9.6rem;
   padding: 0 4.8rem;
   position: relative;
@@ -17,9 +18,9 @@
   height: 2.2rem;
 }
 
-/*************************/
+/**************************/
 /* NAVIGATION */
-/*************************/
+/**************************/
 
 .main-nav-list {
   list-style: none;
@@ -32,9 +33,9 @@
 .main-nav-link:visited {
   display: inline-block;
   text-decoration: none;
-  font-size: 1.8rem;
-  font-weight: 500;
   color: #333;
+  font-weight: 500;
+  font-size: 1.8rem;
   transition: all 0.3s;
 }
 
@@ -57,7 +58,6 @@
 }
 
 /* MOBILE */
-
 .btn-mobile-nav {
   border: none;
   background: none;
@@ -76,9 +76,9 @@
   display: none;
 }
 
-/*************************/
+/**************************/
 /* HERO SECTION */
-/*************************/
+/**************************/
 
 .section-hero {
   background-color: #fdf2e9;
@@ -94,7 +94,7 @@
   gap: 9.6rem;
   align-items: center;
 }
-/*  */
+
 .hero-description {
   font-size: 2rem;
   line-height: 1.6;
@@ -125,7 +125,7 @@
 }
 
 .delivered-imgs img:last-child {
-  margin-right: 0;
+  margin: 0;
 }
 
 .delivered-text {
@@ -138,9 +138,9 @@
   font-weight: 700;
 }
 
-/*************************/
+/**************************/
 /* FEATURED IN SECTION */
-/*************************/
+/**************************/
 
 .section-featured {
   padding: 4.8rem 0 3.2rem 0;
@@ -167,9 +167,9 @@
   opacity: 50%;
 }
 
-/*************************/
+/**************************/
 /* HOW IT WORKS SECTION */
-/*************************/
+/**************************/
 
 .section-how {
   padding: 9.6rem 0;
@@ -188,44 +188,50 @@
 }
 
 .step-img-box {
+  position: relative;
+
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.step-img-box::after,
-.step-img-box::before {
+
+.step-img-box::before,
+.step-img-box::after {
   content: "";
   display: block;
-  border-radius: 60%;
-
+  border-radius: 50%;
   position: absolute;
-  /* top: 50%; */
-  /* left: 50%; */
-  /* transform: translate(-50%, -50%); */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
+
 .step-img-box::before {
-  width: 20%;
+  width: 60%;
   /* height: 60%; */
 
   /* 60% of parent's width */
-  padding-bottom: 20%;
+  padding-bottom: 60%;
+
   background-color: #fdf2e9;
   z-index: -2;
 }
+
 .step-img-box::after {
-  width: 16%;
-  padding-bottom: 16%;
+  width: 45%;
+  padding-bottom: 45%;
   background-color: #fae5d3;
   z-index: -1;
 }
 
 .step-img {
   width: 35%;
+  /* z-index: 10; */
 }
 
-/*************************/
+/**************************/
 /* MEALS SECTION */
-/*************************/
+/**************************/
 
 .section-meals {
   padding: 9.6rem 0;
@@ -244,7 +250,7 @@
 }
 
 .meal-content {
-  padding: 2.4rem 4.8rem 4.8rem 4.8rem;
+  padding: 3.2rem 4.8rem 4.8rem 4.8rem;
 }
 
 .meal-tags {
@@ -263,14 +269,14 @@
   font-weight: 600;
 }
 
-.tag--vegeterian {
+.tag--vegetarian {
   background-color: #51cf66;
 }
 .tag--vegan {
   background-color: #94d82d;
 }
 .tag--paleo {
-  background-color: #fcc419;
+  background-color: #ffd43b;
 }
 
 .meal-title {
@@ -307,12 +313,11 @@
 .all-recipes {
   text-align: center;
   font-size: 1.8rem;
-  font-weight: 500;
 }
 
-/*************************/
+/**************************/
 /* TESTIMONIALS SECTION */
-/*************************/
+/**************************/
 
 .section-testimonials {
   background-color: #fdf2e9;
@@ -328,13 +333,14 @@
 .testimonials {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  row-gap: 4rem;
+  row-gap: 4.8rem;
   column-gap: 8rem;
 }
 
 .testimonial-img {
   width: 6.4rem;
   border-radius: 50%;
+  margin-bottom: 1.2rem;
 }
 
 .testimonial-text {
@@ -369,9 +375,9 @@
   transform: scale(1.1);
 }
 
-/*************************/
+/**************************/
 /* MEALS SECTION */
-/*************************/
+/**************************/
 
 .section-pricing {
   padding: 9.6rem 0;
@@ -379,6 +385,7 @@
 
 .pricing-plan {
   border-radius: 11px;
+
   width: 75%;
 }
 
@@ -396,17 +403,17 @@
 }
 
 .pricing-plan--complete::after {
-  content: "Best plan";
+  content: "Best value";
   position: absolute;
   top: 6%;
-  right: -10%;
+  right: -18%;
 
   text-transform: uppercase;
   font-size: 1.4rem;
   font-weight: 700;
   color: #333;
-  background-color: #fcc419;
-  padding: 0.8rem 4.8rem;
+  background-color: #ffd43b;
+  padding: 0.8rem 8rem;
   transform: rotate(45deg);
 }
 
@@ -417,8 +424,8 @@
 
 .plan-name {
   color: #cf711f;
-  font-size: 2rem;
   font-weight: 600;
+  font-size: 2rem;
   text-transform: uppercase;
   letter-spacing: 0.75;
   margin-bottom: 3.2rem;
@@ -440,15 +447,15 @@
 .plan-text {
   font-size: 1.6rem;
   line-height: 1.6;
-  color: #777;
+  color: #6f6f6f;
 }
 
-.plan-sign-up {
+.plan-sing-up {
   text-align: center;
   margin-top: 4.8rem;
 }
 
-.pricing-details {
+.plan-details {
   font-size: 1.6rem;
   line-height: 1.6;
   text-align: center;
@@ -476,18 +483,23 @@
   line-height: 1.8;
 }
 
-/*************************/
+/**************************/
 /* CTA SECTION */
-/*************************/
+/**************************/
 
 .section-cta {
+  /* top / right / bottom / left */
+  /* padding: 9.6rem 0 12.8rem 0; */
+
+  /* top / horizontal / left */
   padding: 4.8rem 0 12.8rem;
 }
 
 .cta {
   display: grid;
+  /* 2/3 = 66.6% + 1/3 = 33.3% */
   grid-template-columns: 2fr 1fr;
-  background-color: #e67e22;
+  /* background-color: #e67e22; */
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
   border-radius: 11px;
 
@@ -519,7 +531,6 @@
       rgba(230, 125, 34, 0.35)
     ),
     url("../img/eating.jpg");
-
   background-size: cover;
   background-position: center;
 }
@@ -533,7 +544,7 @@
 
 .cta-form label {
   display: block;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 500;
   margin-bottom: 1.2rem;
 }
@@ -541,14 +552,14 @@
 .cta-form input,
 .cta-form select {
   width: 100%;
-  font-size: 1.8rem;
   padding: 1.2rem;
+  font-size: 1.8rem;
   font-family: inherit;
   color: inherit;
   border: none;
   background-color: #fdf2e9;
   border-radius: 9px;
-  box-shadow: 0 1px 2px rgba(0, 9, 0, 0.1);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .cta-form input::placeholder {
@@ -560,9 +571,9 @@
   box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
 }
 
-/*************************/
+/**************************/
 /* FOOTER */
-/*************************/
+/**************************/
 
 .footer {
   padding: 12.8rem 0;
@@ -629,7 +640,7 @@
   text-decoration: none;
   font-size: 1.6rem;
   color: #767676;
-  transition: all 0.3;
+  transition: all 0.3s;
 }
 
 .footer-link:hover,

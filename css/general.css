@@ -166,7 +166,7 @@ body {
   font-size: 2rem;
   font-weight: 600;
   padding: 1.6rem 3.2rem;
-  border-radius: 10px;
+  border-radius: 9px;
 
   border: none;
   cursor: pointer;
@@ -218,6 +218,7 @@ body {
 
 .link:link,
 .link:visited {
+  display: inline-block;
   color: #e67e22;
   text-decoration: none;
   border-bottom: 1px solid currentColor;
@@ -254,7 +255,7 @@ body {
 
 *:focus {
   outline: none;
-  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.6);
+  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
 }
 
 /* HELPER/SETTINGS CLASSES */
