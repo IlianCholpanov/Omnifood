@@ -30,6 +30,10 @@ allLinks.forEach((link) => {
       const sectionEl = document.querySelector(href);
       sectionEl.scrollIntoView({ behavior: "smooth" });
     }
+
+    if (link.classList.contains("main-nav-link")) {
+      headerElement.classList.toggle("nav-open");
+    }
   });
 });
 
