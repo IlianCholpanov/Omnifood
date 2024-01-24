@@ -1,20 +1,20 @@
 # Omnifood
- HTML and CSS Project with Responsive Web Design
-·Introduction
+ HTML and CSS Project with Responsive Web Design 
+  ·Introduction
 
-·Key Features
+  ·Key Features
 
-·Personalization and Nutritional Assessment
+  ·Personalization and Nutritional Assessment
 
-·Meal Selection
+  ·Meal Selection
 
-·Subscription Plans
+  ·Subscription Plans
 
-·Ordering and Delivery
+  ·Ordering and Delivery
 
-·AI Recommendation Engine
+  ·AI Recommendation Engine
 
-·Conclusion
+  ·Conclusion
 
 1. Introduction to Omnifood
 
