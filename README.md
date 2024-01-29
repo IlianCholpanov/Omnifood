@@ -7,7 +7,7 @@ It's a revolutionary app that helps the users eat healthy doordash meals everyda
 
 ## Tech Stack
 - HTML
-- CSS Grid and Flexbox
+- CSS
 - JavaScript
   
 ## Credits
