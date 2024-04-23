@@ -2,8 +2,7 @@
 
 ## Project description
 
-Omnifood is HTML and CSS project with responsive web design.
-It's a revolutionary app that helps the users eat healthy doordash meals everyday.
+Omnifood is HTML and CSS project with responsive web design. Build following the rules of semantic HTML5 & CCS3.
 
 ## Tech Stack
 - HTML
